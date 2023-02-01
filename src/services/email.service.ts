@@ -25,11 +25,13 @@ const createInfo = () => {
     to: testEmail,
     subject: 'Daily Digest',
     template: 'email',
-    attachments: [{
-      filename: 'chart.png',
-      path: 'src/assets/chart.png',
-      cid: 'chart'
-    }]
+    attachments: [
+      {
+        filename: 'chart.png',
+        path: 'src/assets/chart.png',
+        cid: 'chart'
+      }
+    ]
   }
 }
 
@@ -51,6 +53,4 @@ const sendDailyDigest = async () => {
   return await transporter.sendMail(info)
 }
 
-export {
-  sendDailyDigest
-}
+export { sendDailyDigest }

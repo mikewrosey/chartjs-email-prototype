@@ -1,4 +1,3 @@
-
 import { createChartImage } from './services/chart.service'
 import { sendDailyDigest } from './services/email.service'
 
